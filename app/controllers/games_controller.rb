@@ -30,6 +30,6 @@ class GamesController < ApplicationController
   end
 
   def grid_check(attempt, grid)
-    attempt.chars.all? { |l| attempt.upcase.count(l) <= grid.count(l) }
+    attempt.upcase.chars.all? { |l| attempt.upcase.count(l) <= grid.count(l) }
   end
 end
